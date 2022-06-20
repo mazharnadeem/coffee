@@ -1,0 +1,321 @@
+name: food_template_null_safety
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  pin_code_text_field: ^1.8.0
+  simple_animations: ^4.0.1
+  after_layout: ^1.1.0
+  google_maps_flutter: ^2.1.2
+  carousel_slider: ^4.0.0
+  bloc_pattern: ^3.0.0
+  flutter_slidable: ^1.2.0
+  # flutter_rating: ^0.0.2
+  rxdart: ^0.27.3  
+  # carousel_pro: ^1.0.0
+  cached_network_image: ^3.2.0
+  shimmer: ^2.0.0
+  image_picker: ^0.8.4+10
+  flutter_credit_card: ^3.0.1
+  # credit_card: ^0.1.6
+  flutter_rating_bar: ^4.0.0
+  font_awesome_flutter: ^9.2.0
+  eva_icons_flutter: ^3.1.0
+  percent_indicator: ^4.0.0
+  flutter_svg: ^1.0.3
+  provider: ^6.0.2
+  platform: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  fonts:
+    - family : Lemon
+      fonts:
+        - asset: assets/font/Lemon-Regular.ttf
+          weight: 400
+    - family : Sofia
+      fonts:
+        - asset: assets/font/Sofia/SofiaProBold.otf
+          weight: 900
+        - asset: assets/font/Sofia/SofiaProSemiBold.otf
+          weight: 800
+        - asset: assets/font/Sofia/SofiaProMedium.otf
+          weight: 700
+        - asset: assets/font/Sofia/SofiaProRegular.otf
+          weight: 600
+        - asset: assets/font/Sofia/SofiaProLight.otf
+          weight: 500
+        - asset: assets/font/Sofia/SofiaProExtraLight.otf
+          weight: 400
+        - asset: assets/font/Sofia/SofiaProUltraLight.otf
+          weight: 300
+    - family : Poppins
+      fonts:
+        - asset: assets/font/Poppins/Poppins-ExtraBold.otf
+          weight: 900
+        - asset: assets/font/Poppins/Poppins-Bold.otf
+          weight: 800
+        - asset: assets/font/Poppins/Poppins-SemiBold.otf
+          weight: 700
+        - asset: assets/font/Poppins/Poppins-Medium.otf
+          weight: 600
+        - asset: assets/font/Poppins/Poppins-Regular.otf
+          weight: 500
+        - asset: assets/font/Poppins/Poppins-Light.otf
+          weight: 400
+        - asset: assets/font/Poppins/Poppins-ExtraLight.otf
+          weight: 300
+        - asset: assets/font/Poppins/Poppins-Thin.otf
+          weight: 200
+    - family : home
+      fonts:
+        - asset: assets/custom_icon/ic_home.ttf
+    - family : hearth
+      fonts:
+        - asset: assets/custom_icon/ic_hearth.ttf
+    - family : service
+      fonts:
+        - asset: assets/custom_icon/ic_service.ttf
+    - family : myorder
+      fonts:
+        - asset: assets/custom_icon/ic_myorder.ttf
+    - family : profile
+      fonts:
+        - asset: assets/custom_icon/ic_profile.ttf
+    - family : location
+      fonts:
+        - asset: assets/custom_icon/ic_location.ttf
+
+
+  assets:
+    - assets/Template1/image/SplashScreenTemplate1.png
+    - assets/Template1/image/icon.png
+    - assets/Template1/image/onBoarding1.jpeg
+    - assets/Template1/image/onBoarding2.jpeg
+    - assets/Template1/image/onBoarding3.jpeg
+    - assets/Template1/image/chosseBackground.jpeg
+    - assets/Template1/image/loginBackground.jpeg
+    - assets/Template1/image/marker.png
+    - assets/Template1/image/profileBackground.png
+    - assets/Template1/image/backgroundProfile.png
+    - assets/Template1/image/backgroundLine.png
+    - assets/Template1/image/yummyFuture.png
+    - assets/Template1/image/apple.png
+    - assets/Template1/image/facebook.png
+    - assets/Template1/image/google.png
+    - assets/Template1/banner/1.jpg
+    - assets/Template1/banner/2.jpg
+    - assets/Template1/banner/3.jpg
+    - assets/Template1/banner/4.jpg
+    - assets/Template1/banner/5.jpg
+    - assets/Template1/banner/6.jpg
+    - assets/Template1/banner/7.jpg
+    - assets/Template1/map_style.txt
+    - assets/icon/profile.png
+    - assets/icon/box.png
+    - assets/icon/notification.png
+    - assets/icon/notificationIlustration.png
+    - assets/icon/callCenterIlustration.png
+    - assets/icon/discount.png
+    - assets/icon/card.png
+    - assets/icon/callCenter.png
+    - assets/icon/setting.png
+    - assets/icon/style.png
+    - assets/icon/breakfast.png
+    - assets/icon/caffe.png
+    - assets/icon/dinner.png
+    - assets/icon/healty.png
+    - assets/icon/Lunch.png
+    - assets/icon/fashfood.png
+    - assets/Template5/splashScreen.png
+    - assets/Template2/choseLoginBackground.png
+    - assets/Template2/loginBackground.png
+    - assets/Template2/onBoarding1.png
+    - assets/Template2/onBoarding2.png
+    - assets/Template2/onBoarding3.png
+    - assets/Template2/splashBackground.png
+    - assets/Template2/logo.png
+    - assets/Template2/facebook.png
+    - assets/Template2/google.png
+    - assets/Template2/setting.png
+    - assets/Template2/girlcallcenter.png
+    - assets/image/plate_food/1.png
+    - assets/image/plate_food/2.png
+    - assets/image/plate_food/3.png
+    - assets/image/plate_food/4.png
+    - assets/image/plate_food/5.png
+    - assets/image/plate_food/6.png
+    - assets/image/plate_food/7.png
+    - assets/image/plate_food/8.png
+    - assets/image/plate_food/9.png
+    - assets/image/plate_food/10.png
+    - assets/image/plate_food/11.png
+    - assets/image/plate_food/12.png
+    - assets/image/plate_food/13.png
+    - assets/image/plate_food/14.png
+    - assets/image/plate_food/15.png
+    - assets/image/plate_food/16.png
+    - assets/image/plate_food/17.png
+    - assets/image/plate_food/18.png
+    - assets/image/plate_food/19.png
+    - assets/image/plate_food/20.png
+    - assets/image/image_recipe/recipe1.jpg
+    - assets/image/image_recipe/recipe2.jpg
+    - assets/image/image_recipe/recipe3.jpg
+    - assets/image/image_recipe/recipe4.jpg
+    - assets/image/image_recipe/recipe5.png
+    - assets/image/image_recipe/recipe6.png
+    - assets/image/image_recipe/recipe7.png
+    - assets/image/image_recipe/recipe8.png
+    - assets/image/image_recipe/recipe9.jpg
+    - assets/image/image_recipe/recipe10.jpg
+    - assets/image/image_recipe/recipe11.jpg
+    - assets/image/image_recipe/recipe12.jpg
+    - assets/image/image_recipe/recipe13.jpg
+    - assets/image/image_recipe/recipe14.jpg
+    - assets/image/image_recipe/recipe15.jpg
+    - assets/image/image_recipe/recipe16.jpg
+    - assets/image/image_recipe/recipe17.jpg
+    - assets/image/image_recipe/recipe18.jpg
+    - assets/image/image_recipe/recipe19.jpg
+    - assets/image/image_recipe/recipe20.jpg
+    - assets/image/image_recipe/recipe21.jpg
+    - assets/image/image_recipe/recipe22.jpg
+    - assets/image/image_recipe/recipe23.jpg
+    - assets/image/image_recipe/recipe24.jpg
+    - assets/image/image_recipe/recipe25.jpg
+    - assets/image/image_recipe/recipe26.jpg
+    - assets/image/image_recipe/recipe27.jpg
+    - assets/image/image_recipe/recipe28.jpg
+    - assets/image/image_recipe/recipe29.jpg
+    - assets/image/image_recipe/recipe30.jpg
+    - assets/image/image_recipe/recipe31.jpg
+    - assets/image/image_recipe/recipe32.jpg
+    - assets/image/image_recipe/recipe33.jpg
+    - assets/image/image_recipe/recipe34.jpg
+    - assets/image/image_recipe/recipe35.jpg
+    - assets/image/image_recipe/recipe36.jpg
+    - assets/image/image_recipe/detailRecipe.png
+    - assets/Template2/icon/iconAmerican.png
+    - assets/Template2/icon/iconBreakfast.png
+    - assets/Template2/icon/iconBurgers.png
+    - assets/Template2/icon/iconPizza.png
+    - assets/Template2/icon/bookmark.png
+    - assets/Template2/icon/photos.png
+    - assets/Template2/icon/ratting.png
+    - assets/Template2/icon/searchEmpty.png
+    - assets/Template2/icon/logout.png
+    - assets/Template2/icon/aboutApps.png
+    - assets/Template2/icon/callCenter.png
+    - assets/Template2/icon/editProfile.png
+    - assets/icon/share.png
+    - assets/icon/rattingPlus.png
+    - assets/icon/report.png
+    - assets/icon/bookmark.png
+    - assets/icon/wifi.png
+    - assets/Template2/ilustrasion/emptyCart.png
+    - assets/Template2/profile.png
+    - assets/Template2/backgroundProfile.png
+    - assets/Template2/creditCard.png
+    - assets/Template2/cod.png
+    - assets/Template2/paypal.png
+    - assets/Template2/visa.png
+    - assets/Template2/money.png
+    - assets/Template2/house.png
+    - assets/Template2/personal.png
+    - assets/Template2/checklist.png
+    - assets/Template2/category/category1.jpg
+    - assets/Template2/category/category2.jpg
+    - assets/Template2/category/category3.jpg
+    - assets/Template2/category/category4.jpg
+    - assets/Template2/category/category5.jpg
+    - assets/Template2/category/category6.jpg
+    - assets/Template2/category/category7.jpg
+    - assets/Template2/category/category8.jpg
+    - assets/Template2/category/category9.jpg
+    - assets/Template2/category/category10.jpg
+    - assets/Template3/image/splashscreen.png
+    - assets/Template4/image/breakfast.png
+    - assets/Template4/image/splashscreen.png
+    - assets/Template4/image/cafe.png
+    - assets/Template4/image/dinner.png
+    - assets/Template4/image/healtyfood.png
+    - assets/Template4/image/lunch.png
+    - assets/Template4/image/icon_image.png
+    - assets/Template4/image/icon_file.png
+    - assets/Template4/image/icon_microphone.png
+    - assets/Template4/image/icon_monitor.png
+    - assets/Template4/image/icon_video.png
+    - assets/Template4/image/noMessage.png
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
