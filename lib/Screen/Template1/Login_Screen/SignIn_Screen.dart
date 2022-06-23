@@ -40,7 +40,8 @@ class _signinTemplate1State extends State<signinTemplate1> {
                     Color(0xFF151515),
                   ]
                 )
-              ),child: Column(
+              ),
+              child: Column(
               children: <Widget>[
                 SizedBox(
                   height: 100.0,
@@ -154,9 +155,16 @@ class _signinTemplate1State extends State<signinTemplate1> {
                 Padding(
                   padding: const EdgeInsets.only(
                       left: 25.0, right: 25.0, top: 15.0),
-                  child: Align(
-                      alignment: Alignment.centerRight,
-                      child: Text('Forget Password?',style: TextStyle(color: Colors.white,decoration: TextDecoration.underline),)),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(
+                          PageRouteBuilder(
+                              pageBuilder: (_, __, ____) => ConfirmOtpPage()));
+                    },
+                    child: Align(
+                        alignment: Alignment.centerRight,
+                        child: Text('Forget Password?',style: TextStyle(color: Colors.white,decoration: TextDecoration.underline),)),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
@@ -165,8 +173,7 @@ class _signinTemplate1State extends State<signinTemplate1> {
                     onTap: () {
                       Navigator.of(context).pushReplacement(
                           PageRouteBuilder(
-                              pageBuilder: (_, __, ____) =>
-                                  ConfirmOtpPage()));
+                              pageBuilder: (_, __, ____) => ConfirmOtpPage()));
                     },
                     child: Container(
                       height: 52.0,

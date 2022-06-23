@@ -358,8 +358,7 @@ class MySliverAppBar extends SliverPersistentHeaderDelegate {
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
     return Stack(
-      fit: StackFit.expand,
-      overflow: Overflow.clip,
+      clipBehavior: Clip.hardEdge, fit: StackFit.expand,
       children: [
         Container(
           height: 50.0,
